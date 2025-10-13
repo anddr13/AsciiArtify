@@ -13,7 +13,7 @@ PoC — це етап, коли розробники перевіряють, ч�
 
 Відповіддю на завдання буде посилання на репозиторій AsciiArtify (формат посилання: https://github.com/<username>/AsciiArtify) з демо-інструкцією на отримання доступу до інтерфейсу ArgoCD. Файл doc/POC.md у форматі Markdown, гілка main (Приклад демо з офіційного сайту — https://argo-cd.readthedocs.io/en/stable/)'''
 
-$ k3d cluster create argo
+'''$ k3d cluster create argo
 ... 
 INFO[0029] Cluster 'argo' created successfully!         
 INFO[0029] You can now use it like this: kubectl cluster-info
@@ -59,6 +59,7 @@ $ kubectl port-forward svc/argocd-server -n argocd 8080:443&
 Forwarding from 127.0.0.1:8080 -> 8080
 Forwarding from [::1]:8080 -> 8080
 Handling connection for 8080
+'''
 
 $ k -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}"
 cFZIWTM3eFpJR3hDeUxLNQ==#                                                                                                        
