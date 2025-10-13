@@ -16,7 +16,7 @@ PoC — це етап, коли розробники перевіряють, ч�
 Відповіддю на завдання буде посилання на репозиторій AsciiArtify (формат посилання: https://github.com/<username>/AsciiArtify) з демо-інструкцією на отримання доступу до інтерфейсу ArgoCD. Файл doc/POC.md у форматі Markdown, гілка main (Приклад демо з офіційного сайту — https://argo-cd.readthedocs.io/en/stable/)
 ```
 
-'''$ k3d cluster create argo
+```$ k3d cluster create argo
 ... 
 INFO[0029] Cluster 'argo' created successfully!         
 INFO[0029] You can now use it like this: kubectl cluster-info
@@ -65,6 +65,7 @@ Handling connection for 8080
 '''
 
 $ k -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}"
+```
 
 [![asciicast](https://asciinema.org/a/laA84I5umhQOWrQJYxwFgsM0G.svg)](https://asciinema.org/a/laA84I5umhQOWrQJYxwFgsM0G)
 cFZIWTM3eFpJR3hDeUxLNQ==#                                                                                                        
