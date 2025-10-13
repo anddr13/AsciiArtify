@@ -65,9 +65,11 @@ Handling connection for 8080
 '''
 
 $ k -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}"
-```
 
-[![asciicast](https://asciinema.org/a/laA84I5umhQOWrQJYxwFgsM0G.svg)](https://asciinema.org/a/laA84I5umhQOWrQJYxwFgsM0G)
+
+
 cFZIWTM3eFpJR3hDeUxLNQ==#                                                                                                        
 $ k -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}"|base64 -d;echo
 pVHY37xZIGxCyLK5
+```
+[![asciicast](https://asciinema.org/a/laA84I5umhQOWrQJYxwFgsM0G.svg)](https://asciinema.org/a/laA84I5umhQOWrQJYxwFgsM0G)
